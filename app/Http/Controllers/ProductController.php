@@ -215,8 +215,6 @@ class ProductController extends Controller
             return redirect()->intended($segment)->with('success', 'Data berhasil ditambahkan!');
         } catch (\Exception $e) {
             DB::rollback();
-            echo $e->getMessage();
-            die;
             return redirect()->back()->with('error', 'Data gagal ditambahkan!');
         }
     }
