@@ -16,17 +16,17 @@
                 </div>
             </div>
             <div class="row mb-2">
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <input type="text" id="search" class="form-control">
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <select class="form-select" id="filter_category">
                         <option value="" selected>Semua</option>
                         @foreach($category as $c)
                         <option value="{{ $c->id }}">{{ $c->nama }}</option>
                         @endforeach
                     </select>
-                </div>
+                </div> -->
                 <div class="col-md-3">
                     <button class="btn btn-success" onclick="exportData()" style="float:right">Export Data</button>
                 </div>
